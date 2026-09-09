@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catch The Ball</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen">
+        <div class="start-box">
+            <div class="game-icon">🎯</div>
+
+            <h1>Catch The Ball</h1>
+
+            <p>Catch the falling balls and build your combo!</p>
+
+            <div class="game-info">
+                <span>⭐ Score</span>
+                <span>🔥 Combo</span>
+                
+                <span>❤️ Lives</span>
+            </div>
+
+            <button id="startBtn">▶ START GAME</button>
+        </div>
+    </div>
+
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="game-screen hidden">
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+
+            <div class="stat">
+                <span>⭐</span>
+                <div>
+                    <small>SCORE</small>
+                    <strong id="score">0</strong>
+                </div>
+            </div>
+<div class="stat">
+    <span>⏱️</span>
+    <div>
+        <small>TIME</small>
+        <strong id="timer">60</strong>
+    </div>
+</div>
+            <div class="stat">
+                <span>🔥</span>
+                <div>
+                    <small>COMBO</small>
+                    <strong id="combo">0</strong>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>❤️</span>
+                <div>
+                    <small>LIVES</small>
+                    <strong id="lives">3</strong>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Game Area -->
+        <div id="gameArea">
+
+            <!-- Background effects -->
+            <div class="stars"></div>
+
+            <!-- Ball -->
+            <div id="ball"></div>
+
+            <!-- Player -->
+            <div id="player">
+                <div class="player-glow"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="leftBtn">⬅</button>
+
+            <p>Move the player and catch the ball!</p>
+
+            <button id="rightBtn">➡</button>
+        </div>
+
+    </div>
+
+
+    <!-- Game Over Popup -->
+    <div id="gameOverScreen" class="popup hidden">
+
+        <div class="game-over-box">
+
+            <div class="game-over-icon">💥</div>
+
+            <h2>GAME OVER</h2>
+
+            <p>Your final score</p>
+
+            <div class="final-score">
+                <span id="finalScore">0</span>
+            </div>
+
+            <div class="result-info">
+
+                <div>
+                    <span>⭐</span>
+                    <small>Score</small>
+                    <strong id="resultScore">0</strong>
+                </div>
+
+                <div>
+                    <span>🔥</span>
+                    <small>Best Combo</small>
+                    <strong id="bestCombo">0</strong>
+                </div>
+
+            </div>
+
+            <button id="restartBtn">
+                🔄 PLAY AGAIN
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Combo Bonus Popup -->
+    <div id="comboPopup" class="combo-popup hidden">
+        🔥 <span id="comboMessage">5 COMBO!</span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
